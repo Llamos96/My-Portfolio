@@ -1,0 +1,33 @@
+.contact-card{
+    background: linear-gradient(170deg, rgb(72, 66, 66) 0%, rgb(34, 32, 32) 100%) !important;
+}
+
+form input, form textarea, form button{
+    margin: 10px 0 10px 0;
+    font-size: 17px;
+    padding: 15px;
+    transition: 0.2s;
+    outline: transparent;
+    border: solid 2px transparent;
+}
+
+form input:focus, form textarea:focus{
+    border: solid 2px rgba(226, 20, 20, 0.725);
+}   
+
+form button{
+    background-color: rgb(243, 238, 238);
+    /* background: linear-gradient(135deg, rgb(244, 242, 242) 0%, rgb(243, 240, 240) 100%); */
+    font-weight: 300;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: rgba(226, 20, 20, 0.725);
+    color: white;
+    font-weight: 300;
+}
+
+form button:hover > i {
+    color: white;
+}

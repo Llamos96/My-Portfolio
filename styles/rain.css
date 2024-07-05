@@ -1,0 +1,12 @@
+
+canvas {
+    transform: rotate(-90deg);
+    z-index: 0; 
+    margin: 0px; 
+    padding: 0px; 
+    background-color: transparent; 
+    position: absolute; 
+    height: max-content;
+    border: solid 1px;
+  }
+    

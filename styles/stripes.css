@@ -1,0 +1,29 @@
+.stripes{
+    position: relative;
+    z-index: -1;
+    overflow: visible;
+}
+
+.stripes::before{
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 0, 0, 0.747);
+    top: -100px;
+    left: -200px;
+    width: 800px;
+    height: 150px;
+    transform: rotate(-40deg);
+    z-index: -1;
+}
+
+.stripes::after{
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 0, 0, 0.747);
+    top: 1900px;
+    left: 250px;
+    width: 900px;
+    height: 120px;
+    transform: rotate(-40deg);
+    z-index: -1;
+}

@@ -1,0 +1,60 @@
+
+/* Colors */
+.transparent{color: transparent}.bg-transparent{background-color: transparent}
+.white{color: white}.bg-white{background-color: white}
+/* Colors to use instead of pure white - for backgrounds */
+.white-2{color: #f6f9fc}.bg-white-2{background-color: #f6f9fc}
+.mint-cream{color: #f5fffa}.bg-mint-cream{background-color: #f5fffa}
+.sea-shell{color: #fff5ee}.bg-sea-shell{background-color: #fff5ee}
+.pearl{color: #e2dfd2}.bg-pearl{background-color: #e2dfd2}
+.parchment{color: #fcf5e5}.bg-parchment{background-color: #fcf5e5}
+.ivory{color: #fffff0}.bg-ivory{background-color: #fffff0}
+.bone-white{color: #f9f6ee}.bg-bone-white{background-color: #f9f6ee}
+
+.black{color: #1b1c1e}.bg-black{background-color: #1b1c1e}
+.black-2{color: #1f1f1f}.bg-black-2{background-color: #1f1f1f}
+.black-3{color: #272727}.bg-black-3{background-color: #272727}
+.black-4{color: #2b2b2b}.bg-black-4{background-color: #2b2b2b}
+.black-5{color: #303030}.bg-black-5{background-color: #303030}
+
+/* Colors plus background colors*/
+.blue{color: #1e90ff}.bg-blue{background-color: #1e90ff}
+.teal{color: #00d4ff}.bg-teal{background-color: #00d4ff}
+.teal-2{color:#05c4ce}.bg-teal-2{background-color: #05c4ce}
+.violet{color:#635bff}.bg-violet{background-color:#635bff}
+.yellow{color:#ffcc59}.bg-yellow{background-color: #ffcc59}
+.orange{color:#ff5e48}.bg-orange{background-color: #ff5e48}
+.red{color: #df2828}.bg-red{background-color: #df2828}
+.green{color:#13a013}.bg-green{background-color: #13a013}
+.green-2{color:#2ef62e}.bg-green-2{background-color: #2ef62e}
+.green-3{color:#2ae1ad}.bg-green-3{background-color: #2ae1ad}
+.jade{color:#00a86d}.bg-jade{background-color: #00a86d}
+.emerald{color:#50c878}.bg-emerald{background-color: #50c878}
+.gray{color: gray}.bg-gray{background-color: gray}
+.gray-2{color:#7d7e8a}.bg-gray-2{background-color: #7d7e8a}/*footer*/
+.gray-3{color: #425466}.bg-gray-3{background-color: #425466}/*p1*/ 
+.gray-4{color:#3a3a3a}.bg-gray-4{background-color: #3a3a3a}/*title2*/
+.gray-5{color: #adbdcc}.bg-gray-5{background-color: #adbdcc}/*p2*/
+.blue-2{color: #0A2540}.bg-blue-2{background-color: #0A2540}/*title1*/
+.blue-3{color: #002c59}.bg-blue-3{background-color: #002c59}
+
+/* Colors hover plus background colors hover*/
+.hover\:blue:hover{color: #1e90ff}.hover\:bg-blue:hover{background-color: #1e90ff}
+.hover\:teal:hover{color: #00d4ff}.hover\:bg-teal:hover{background-color: #00d4ff}
+.hover\:teal-2:hover{color:#05c4ce}.hover\:bg-teal-2:hover{background-color: #05c4ce}
+.hover\:violet:hover{color:#635bff}.hover\:bg-violet:hover{background-color:#635bff}
+.hover\:yellow:hover{color:#ffcc59}.hover\:bg-yellow:hover{background-color: #ffcc59}
+.hover\:orange:hover{color:#ff5e48}.hover\:bg-orange:hover{background-color: #ff5e48}
+.hover\:red:hover{color: #df2828}.hover\:bg-red:hover{background-color: #df2828}
+.hover\:green:hover{color:#13a013}.hover\:bg-green:hover{background-color: #13a013}
+.hover\:green-2:hover{color:#2ef62e}.hover\:bg-green-2:hover{background-color: #2ef62e}
+.hover\:green-3:hover{color:#2ae1ad}.hover\:bg-green-3:hover{background-color: #2ae1ad}
+.hover\:jade:hover{color:#00a86d}.hover\:bg-jade:hover{background-color: #00a86d}
+.hover\:emerald:hover{color:#50c878}.hover\:bg-emerald:hover{background-color: #50c878}
+.hover\:gray:hover{color: gray}.hover\:bg-gray:hover{background-color: gray}
+.hover\:gray-2:hover{color:#7d7e8a}.hover\:bg-gray-2:hover{background-color: #7d7e8a}/*footer*/
+.hover\:gray-3:hover{color: #425466}.hover\:bg-gray-3:hover{background-color: #425466}/*p1*/ 
+.hover\:gray-4:hover{color:#3a3a3a}.hover\:bg-gray-4:hover{background-color: #3a3a3a}/*title2*/
+.hover\:gray-5:hover{color: #adbdcc}.hover\:bg-gray-5:hover{background-color: #adbdcc}/*p2*/
+.hover\:blue-2:hover{color: #0A2540}.hover\:bg-blue-2:hover{background-color: #0A2540}/*title1*/
+.hover\:blue-3:hover{color: #002c59}.hover\:bg-blue-3:hover{background-color: #002c59}

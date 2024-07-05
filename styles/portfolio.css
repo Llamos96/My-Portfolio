@@ -1,0 +1,192 @@
+body{
+    overflow-x: hidden;
+   
+}
+
+*{
+    color: #1b1c1e;
+}
+
+
+.main-section{
+    position: relative;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 6px;
+    height: 400px;
+    width: 100%;
+    color: white;
+    transform: translate(0, -100px);
+}
+.main-section:before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120%;
+    width: 50%;
+    background-color: #1b1c1e;
+    transform: skew(0deg, 9deg);
+}
+.main-section:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 120%;
+    width: 50%;
+    background-color: #1b1c1e;
+    transform: skew(0deg, -9deg);
+}
+
+.square{width: 78px;height: 78px;transition: 0.2s;border: solid 1px rgba(128, 128, 128, 0.211);content-visibility:hidden}
+.square img{margin-top: 9px;width: 40px;height: 40px}
+.square p{margin-top: -2px}
+.square:hover{transform: scale3d(1.2, 1.2, 1);box-shadow: 0 3px 14px rgba(0, 0, 0, 0.297);content-visibility:visible}
+.square-animate{animation: hovering 3s linear infinite}
+
+@keyframes hovering{
+    0%{transform: scale3d(1, 1, 1);box-shadow: 0 0px 0px;content-visibility:hidden}
+    10%{transform: scale3d(1.2, 1.2, 1);box-shadow: 0 3px 14px rgba(0, 0, 0, 0.297);content-visibility:visible}
+    95%{transform: scale3d(1.2, 1.2, 1);box-shadow: 0 3px 14px rgba(0, 0, 0, 0.297);content-visibility:visible}
+    100%{transform: scale3d(1, 1, 1);box-shadow: 0 0px 0px;content-visibility:hidden}
+}
+
+.welcome{
+    bottom: 0;
+    left: 50%;
+}
+.welcome h1{
+    transition: 600ms;
+}
+
+.welcome :nth-child(16){
+    opacity: 0;
+    transition: 600ms;    
+}
+.welcome:hover > :nth-child(1){transform: translate(-1000px, 500px);}
+.welcome:hover > :nth-child(2){transform: translate(-900px, 800px);}
+.welcome:hover > :nth-child(3){transform: translate(-800px, 1100px);}
+.welcome:hover > :nth-child(4){transform: translate(-1200px, -600px);}
+.welcome:hover > :nth-child(5){transform: translate(-1000px, -750px);}
+.welcome:hover > :nth-child(6){transform: translate(00px, -700px);}
+.welcome:hover > :nth-child(7){transform: translate(-100px, 700px);}
+.welcome:hover > :nth-child(8){transform: translate(1400px, -500px);}
+.welcome:hover > :nth-child(9){transform: translate(-1200px, 1050px);}
+.welcome:hover > :nth-child(10){transform: translate(300px, 500px);}
+.welcome:hover > :nth-child(11){transform: translate(500px, -700px);}
+.welcome:hover > :nth-child(12){transform: translate(200px, 950px);}
+.welcome:hover > :nth-child(13){transform: translate(900px, 1100px);}
+.welcome:hover > :nth-child(14){transform: translate(1000px, 800px);}
+.welcome:hover > :nth-child(15){transform: translate(1100px, 500px);}
+.welcome:hover > :nth-child(16){opacity:1;animation: underlineeffect 2s;}
+
+.triangle{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+    bottom: -147px;
+    left: 47%;
+    border-radius: 50px;
+    
+}
+
+@keyframes underlineeffect {
+    0%{
+        text-decoration: underline;
+    }
+    30%{
+        text-decoration: underline;
+    }
+    60%{
+        text-decoration: underline;
+    }
+    90%{
+        text-decoration: underline;
+    }
+    
+}
+
+
+
+
+.next{
+    position: absolute;
+    z-index: 1;
+}
+
+.next::before{
+    top: -5px;
+    width: 100%;
+    background-color: #c8ff00;
+    position: absolute;
+    transform: rotate(-16deg);
+    content: '.';
+    z-index: -1;
+    height: 50px;
+    right: -920px;
+    border-radius: 0px;
+}
+
+.next::after{
+    top: 30px;
+    width: 100%;
+    background-color: #635bff;
+    position: absolute;
+    transform: rotate(-16deg);
+    content: '.';
+    z-index: -1;
+    height: 80px;
+    right: -900px;
+    border-radius: 0px;
+    opacity: 0.7;
+}
+
+.card{
+    background-color: #f6f9fc;
+}
+
+.title-detail{
+    border-left: solid 1px #00d4ff;
+}
+
+
+/* Observer CSS */
+.observer{opacity: 0;filter: blur(4px);transform: translateX(10%);transition: all 1s}.show{opacity: 1;filter: blur(0px);transform: translateX(0)}@media(prefers-reduced-motion){.hidden{transition: none}}
+
+
+/* .rotate-square{
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border: solid 3px rgba(128, 128, 128, 0.358) ;
+    animation: whatever 5s linear forwards infinite, translateboy 5s linear forwards infinite;
+    top: 50%;
+    left: 65%;
+    border-radius: 85px;
+    transition: 1s;
+    background: conic-gradient(#635bff, #635bff 30%);
+    filter: blur(3px);
+    z-index: -1;
+    /* content: ''; 
+} */
+
+ @keyframes whatever{
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
+/*
+@keyframes translateboy{
+    0%{
+        transform:translate(-160px)
+    }
+    100%{
+        transform:rotate(-400px)
+    }
+} */

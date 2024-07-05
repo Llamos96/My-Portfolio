@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlando Llamos - Portfolio</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/flip-card.css">
+    <link rel="stylesheet" href="styles/logo-effect.css">
+    <link rel="stylesheet" href="styles/my-modal.css">
+    <link rel="stylesheet" href="styles/my-picture.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/stripes.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/svgstyle.css">
+    
+    <!-- Carousel -->
+    <script defer src="scripts/carousel.js"></script>
+    <!-- Rain Effect -->
+    <script defer src="scripts/raineffect.js"></script>
+    <link rel="stylesheet" href="styles/rain.css">
+
+    <!-- Leaf Stylesheet -->
+    <link rel="stylesheet" href="styles/leaf/leaf.css">
+    <link rel="stylesheet" href="styles/leaf/colors.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="fontawesome/6.4.0/css/all.min.css">
+
+    <!-- Switch mode -->
+    <link rel="stylesheet" href="styles/switch-mode/switch-style.css">
+    <script src="scripts/switch-mode.js" defer></script>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script defer src="scripts/observer.js"></script>
+    <script defer src="scripts/my-modal.js"></script>
+    <script defer src="scripts/typewriter.js"></script>
+</head>
+<body class="bg-mint-cream stripes">
+
+    <!-- Navbar -->
+    <nav class="flex bg-transparent p-3 sticky z-top nav-float radius-10 space-between border-variant-2 border-dotted">
+        <div class="poppins-800 z-14">No Logo</div>
+        <div class="menu" onclick="showContent()" id="myModalTrigger">
+            <div class="menu-bar-1"></div>
+            <div class="menu-bar-2"></div>
+            <div class="menu-bar-3"></div>
+        </div>
+        
+    </nav>
+
+    <div id="myModal">
+        <div class="modal-content p-5"> 
+            <span class="close">&times;</span> 
+            <div class="flex flex-wrap space-between align-center">
+                <a class="m-2 mb-3 underline z-13 weight-800 col-lg-2 col-sm-12 col-md-12">My portfolio</a>
+                <a class="z-14 my-2 hover:red pointer weight-300 col-lg-2 col-sm-12 col-md-12" href="https://github.com/Llamos96"> Projects </a>
+                <a class="z-14 my-2 hover:red pointer weight-300 col-lg-2 col-sm-12 col-md-12"> Skills </a>
+                <a class="z-14 my-2 hover:red pointer weight-300 col-lg-2 col-sm-12 col-md-12"> About me </a>
+                <a class="z-14 my-2 hover:red pointer weight-300 col-lg-2 col-sm-12 col-md-12"> Contact </a>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Header -->   
+    <section class="vh-100 mb-5 pb-5 z-top">
+        <div class="col-lg-12 col-sm-8 col-md-8 px-5 mx-5">
+            <h1 class="z-10 weight-800 mt-5 pt-5">Orlando Llamos Isaac</h1>   
+            <h1 class="z-15 weight-300 gray px-1">My portfolio</h1> 
+        </div>  
+        <h1 class="z-6 weight-800 mx-5 px-5 col-lg-11 sm-absolute sm-hidden md-absolute md-hidden lg-relative lg-visible">
+            <accent>
+                <a href="" class="typewrite" data-period="100" data-type='["Web dev.", "UX/UI + graphic designer.", "yes, I build all that appealing stuff..."]'>
+                    <span class="wrap"></span>
+                </a>
+            </accent>
+        </h1>          
+    </section>
+
+    <!-- Double section -->
+    <section class="vh-100 mt-5 pt-5 col-sm-12 col-md-12 col-lg-12">
+        <div class="flex flex-wrap">
+
+             <!-- Projects -->
+            <div class="p-5 w-30 observer vh-100 col-sm-12 col-md-12 col-lg-5">     
+                <span class="z-14 red">Projects</span>                
+                <h1 class="title z-11 weight-300">From Front to Back.</h1>
+                <p class="z-15 gray pr-5 weight-300 mb-3">Discover my passion for development through innovative projects such as the calendar in JavaScript, the integration of Laravel in my creations and my diverse experience with Python and other languages. A look at my work will show you my dedication and creativity in each project.</p>
+                <ul class="li-none z-16 p-1 flex flex-column w-75">
+                    <li class="pointer my-2">
+                        <i class="icon fas fa-calendar"></i> 
+                        <accent class="red hover:underline">CalendarJs</accent> A javscript calendar of fast rendering. It also provides functions to store and display tasks, activities and events.
+                    </li>
+                    <li class="pointer my-2">
+                        <i class="icon fas fa-moon"></i> 
+                        <accent class="red hover:underline">Weather App</accent> A javscript weahter app with WeatherApi integration.
+                    </li>
+                    <li class="pointer my-2">
+                        <i class="icon fas fa-eye"></i> 
+                        <accent class="red hover:underline">Password Generator</accent> A python simple app for generate strong and random passwords.
+                    </li>
+                    <li class="pointer my-2">
+                        <i class="icon fas fa-gear"></i>  
+                        <accent class="red hover:underline">Saycon</accent> A full data analysis web site in Laravel made for my company. 
+                    </li>
+
+                </ul>
+                <a href="https://github.com/Llamos96" class="a flex hover:underline caption bg-red">
+                    Github Repository
+                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path class="arrow-head" fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path>
+                        <path class="arrow-stick" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
+                    </svg>
+                </a>
+
+            </div>
+
+            <!-- Set of Skills -->
+            <div class="p-5 w-30 observer vh-100 col-sm-12 col-md-12 col-lg-5">  
+                <span class="z-14 red">Set of Skills</span>              
+                <h1 class="title z-11 weight-300">Always improving.</h1>
+                <p class="z-15 gray pr-5 weight-300 mb-3">Welcome to my skills section! I am a versatile developer with experience in front end, back end and UX/UI design. My goal is to combine technology and creativity to offer unique and impactful solutions. Discover how my skills can enhance your next project.</p>
+                <a href="files/CV - Orlando Llamos Isaac - ES.pdf" class="a flex hover:underline caption bg-red">
+                    Download CV
+                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path class="arrow-head" fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path>
+                        <path class="arrow-stick" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
+                    </svg>
+                </a>
+                <div id="port-squares" class="mt-4 p-5 flex flex-wrap space-between">     
+                    <div class="radius-10 col-1 mr-5 my-2 pr-3 col-sm-12 col-md-12">
+                        <img src="svg/logo-javascript.svg" alt="" class="auto-scale">
+                        <!-- <p class="z-17 poppins-400 gray-3">JS</p> -->
+                    </div>
+                    <div class="radius-10 col-1 mr-5 my-2 pr-3 col-sm-3 col-md-3">
+                        <img src="svg/vue.svg" alt="" class="auto-scale">
+                        <!-- <p class="z-17 poppins-400 gray-3">Vue.js</p> -->
+                    </div> 
+                    <div class="radius-10 col-1 mr-5 my-2 pr-3 col-sm-3 col-md-3">
+                        <img src="svg/nodejs-icon.svg" alt="" class="auto-scale">
+                        <!-- <p class="z-17 poppins-400 gray-3">Node.js</p> -->
+                    </div> 
+                    <div class="radius-10 col-1 mr-5 my-2 pr-3 col-sm-3 col-md-3">
+                        <img src="svg/css-3.svg" alt="" class="auto-scale">
+                        <!-- <p class="z-17 poppins-400 gray-3">CSS</p> -->
+                    </div>  
+                    <div class="radius-10 col-1 mr-5 my-2 pr-3 col-sm-3 col-md-3">
+                        <img src="svg/figma-5.svg" alt="" class="auto-scale">
+                        <!-- <p class="z-17 poppins-400 gray-3">CSS</p> -->
+                    </div>  
+                    <div class="radius-10 col-1 mr-5 my-2 pr-3 col-sm-12 col-md-12">
+                        <img src="svg/laravel-2.svg" alt="" class="auto-scale">
+                        <!-- <p class="z-17 poppins-400 gray-3">Laravel</p> -->
+                    </div>  
+                    <div class="radius-10 col-1 mr-5 my-2 pr-3 col-sm-3 col-md-3">
+                        <img src="svg/php-1.svg" alt="" class="auto-scale">
+                        <!-- <p class="z-17 poppins-400 gray-3">PHP</p> -->
+                    </div> 
+
+                </div>
+            </div>       
+        </div>
+    </section>
+
+
+    <!-- How can I -->
+    <section class="vh-100">
+        <div class="w-75 m-auto">
+            <span class="z-13 red">How can I help <i class="fas fa-question fa-shake red"></i></span>
+            <h1 class="title z-10 weight-300">If you are thinking about hiring me...</h1>
+            <p class="z-16 gray">Here are one of the improvements I can bring to your team, company or bussiness. Take a few seconds to check'em all out.</p>
+        </div>
+        <div class="flex flex-center flex-wrap">
+            <div class="card m-5 p-1 shadow-5 radius-5 border-box">
+                <div class="card-graphic radius-0 p-2 linear-gradient">
+                    <!-- <img src="bg.jpg" alt="" class="auto-scale"> -->
+                    <div class="overlay-spheres sphere-1:yellow sphere-1:3 sphere-2:orange sphere-2:3"></div>
+                    <div class="card-inside border-none bg-white">
+                        <div class="m-1 radius-5">                        
+                            <h2 class="violet"><i class="fas fa-edit"></i> Upgrade your designs</h2>
+                            <p> From the UX/UI archives, and the brief designers, what can we learn? </p>
+                        </div>
+                    </div>
+                </div>            
+                <div class="card-body px-3">
+                    <!-- <span class="bg-violet white radius-10 px-5 py-2"><i></i>Atlas</span> -->
+                    <h4 class="z-13 weight-300 mt-3">Build up your website</h4>
+                    <p class="gray z-17">Immerse yourself in the world of front end development with my skills in HTML, CSS and JavaScript. Responsive design and web optimization are just the beginning of what I can offer you.</p>
+                </div>            
+                <div class="card-cta p-3 flex flex-end">
+                    <a href="" class="a bg-red">Examples</a>
+                </div>
+            </div>
+            <div class="card m-5 p-1 shadow-5 radius-5 border-box">
+                <div class="card-graphic radius-0 p-2 linear-gradient">
+                    <!-- <img src="bg.jpg" alt="" class="auto-scale"> -->
+                    <div class="overlay-spheres sphere-1:teal sphere-1:3 sphere-2:violet sphere-2:3"></div>
+                    <div class="card-inside border-none bg-white">
+                        <div class="m-1 radius-5">                            
+                            <h2 class="yellow">Laravel 11.0</h2>
+                            <p> From the UX/UI archives,  </p>
+                        </div>
+                    </div>
+                </div>            
+                <div class="card-body px-3">
+                    <!-- <span class="bg-violet white radius-10 px-5 py-2"><i></i>Atlas</span> -->
+                    <h4 class="z-13 weight-300 mt-3">Code and develop better systems</h4>
+                    <p class="gray z-17">Explore the server side with my knowledge of PHP, Python and databases. From API development to server-side logic implementation, I'm ready to take your projects to the next level.</p>
+                </div>            
+                <div class="card-cta p-3 flex flex-end">
+                    <a href="" class="a bg-red">My projects</a>
+                </div>
+            </div>
+            <div class="card m-5 p-1 shadow-5 radius-5 border-box">
+                <div class="card-graphic radius-0 p-2 linear-gradient">
+                    <!-- <img src="bg.jpg" alt="" class="auto-scale"> -->
+                    <div class="overlay-spheres sphere-1:blue sphere-1:2 sphere-2:green sphere-2:3"></div>
+                    <div class="card-inside border-none bg-white">
+                        <div class="m-1 radius-5">  
+                            <img src="images/graphicsoftwares.png" alt="" class="autoscale radius-10">                          
+                            <h2 class="black-2">Figma, Gimp, INKScape</h2>
+                            <p> From the UX/UI archives,  </p>
+                        </div>
+                    </div>
+                </div>            
+                <div class="card-body px-3">
+                    <!-- <span class="bg-violet white radius-10 px-5 py-2"><i></i>Atlas</span> -->
+                    <h4 class="z-13 weight-300 mt-3">Edit to astonishing levels</h4>
+                    <p class="gray z-17">Welcome to the world of user-centered design! With my focus on user experience and UI design, every detail counts. Discover how my passion for usability can improve the interaction of your products.</p>
+                </div>            
+                <div class="card-cta p-3 flex flex-end">
+                    <a href="" class="a bg-red">Collaborate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Me -->
+    <section class="vh-100">
+        <div class="my-5 p-5 col-lg-12">
+            <p class="z-14 red shadow-5 radius-10 p-2 col-lg-2 col-sm-10 col-md-10">Finally, about me</p>
+            <h1 class="title z-10 weight-300 col-lg-12 mb-4">Automatic Engineer actually, but...</h1>
+            <div class="mt-4 relative flex flex-wrap col-sm-12 col-md-12 col-lg-7">
+                <div class="observer col-sm-12 col-md-12 col-lg-4 mb-5 mx-3">
+                    <img src="images/port-smaller.png" alt="" class="h-20">
+                </div>
+                <span class="z-15 weight-400 gray col-sm-10 col-md-10 col-lg-7">I mainly work with frameworks and technologies for code both client and server side, incorporating database management systems and UX/UI design. Foremost with the use Laravel Livewire + Vue.js stack, with the use of trending techs and libraries. Accuratte elements, applications and tools about UX/UI (wireframing, desing systems, typography, etc.), and diverses styleshing habits through the use of pure CSS, Tailwindcss (and Boostrap when feeling tired), but mainly my customized stylesheet <a href="" class="underline red">Leaf</a>. Also Figma. As a full stack developer, well... check out the <a href="files/CV - Orlando Llamos Isaac - ES.pdf" class="underline red"> resumé.</a>
+                <br>
+                <!-- Yes, I know about PID Controllers too, SCADA systems, Control Theory and why not, Microelectronics. -->
+                </span>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <section class="footer py-5 bg-black relative col-lg-12">
+        <div class="flex flex-wrap">
+            <div class="col-lg-5 col-md-12 col-sm-12">
+                <div class="m-4 p-4">
+                    <div class="white z-12 m-4">NO LOGO STILL</div>
+                    <div class="white z-15 m-4 w-50">"Eighty percent of success is showing up." - Woody Allen</div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12">
+                <div class="observer contact-card mx-2 mt-3 px-5 pt-3">                
+                    <div class="z-11 weight-300 white my-3">Contact</div>
+                    <p class="z-15 weight-300 white">Interested in having me work in your project? Creating content or design your front-ends? Have a suggestion for my improvement? Maybe just a general question? I would love to hear from you!</p>
+                    <form class="flex flex-column py-4 my-3">
+                        <input type="text" placeholder="Name" name="name">
+                        <input type="text" placeholder="Email" name="email">
+                        <textarea placeholder="Please include any relevant details with your request." name="request" cols="30" rows="6" ></textarea>
+                        <button class="p-3 red" type="submit"> Submit <i class="fas fa-paper-plane red"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="mx-5 mb-3 px-4">
+            <div class="flex flex-wrap">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <h1 class="py-4 z-14 white flex underline">Portfolio</h1>
+                    <div class="space-around">
+                        <h1 class="z-16 white hover:underline hover:red">Github Repos</h1>
+                        <h1 class="z-16 white hover:underline hover:red">My Latest Works</h1>
+                        <h1 class="z-16 white hover:underline hover:red">My Resumé</h1>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <h1 class="py-4 z-14 white flex underline">Where to find me</h1>
+                    <div class="space-around">
+                        <h3 class="z-16 white hover:underline hover:red"><i class="fab fa-github white"></i>  github.oli.io</h3>
+                        <h3 class="z-16 white hover:underline hover:red"><i class="fab fa-facebook white"></i> orlando llamos</h3>
+                        <h3 class="z-16 white hover:underline hover:red"><i class="fab fa-telegram white"></i> t.me/orlandollamos</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="flex space-between m-5 px-4">
+            <p class="align-center z-17 weight-700 white">&copy; Orlando Llamos 2024</p>
+            <p class="align-center z-17 weight-700 white">EN ES</p>
+        </div>
+    </section>
+</body>

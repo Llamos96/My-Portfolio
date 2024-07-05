@@ -1,0 +1,51 @@
+:root{--color1: #1663F9;--color2: #20B5BE;--color3: #CC28A8;}
+svg{cursor: pointer}
+#blue{fill: var(--color1)}#teal{fill: var(--color2)}#pink{fill: var(--color3)}
+#blue,#teal,#pink{transition: all 1s ease}
+#blue{transform: translateX(-100%)}
+svg:hover #pink{transform: translateX(20%)}
+svg:hover #teal{transform: translateX(40%);opacity: 0}
+
+
+@keyframes animate-star{
+    0%{stroke-dashoffset: -340}
+    40%{stroke-dashoffset: -170}
+    80%{stroke-dashoffset: 0
+        /* fill: transparent; */
+    }
+    100%{stroke-dashoffset: 0 /* fill: dodgerblue; */
+    }
+}
+
+#portfoliosvg{
+    animation: grantshadow linear forwards; 
+    animation-delay: 3.2s;
+}
+
+#workspace-group{
+    fill: transparent;
+    stroke-width: 1px;
+    stroke-dashoffset: 2050;
+    stroke-dasharray: 2050;
+}
+
+.workspace-animate{animation: animate-appcontainer 4s linear forwards}
+
+#rectangle1{
+    stroke-width: 3px;
+}
+
+@keyframes grantshadow{
+    0%{
+    }
+    100%{
+        stroke: gray !important;
+    }
+}
+
+@keyframes animate-appcontainer{
+    0%{stroke-dashoffset: 2050}
+    40%{stroke-dashoffset: 1225}
+    80%{stroke-dashoffset: 422}
+    100%{stroke-dashoffset: 0}
+}
